@@ -42,7 +42,7 @@ cashBackCards.sort(sort('<bank.length'))
 ```
 
 
-We can also create a custom function to sort by. The sorting function should accept two objects, compare them, and return -1 or 1 if the condition was passed. In this way, any valid sorting function for `Array.prototype.sort()` is valid for `sort()`
+We can also create a custom function to sort by. The sorting function should accept two objects, compare them, and return `-1` or `1` if the condition was passed. In this way, any valid sorting function for `Array.prototype.sort()` is valid for `sort()`
 
 ```javascript
 // sort by the number of registered trademark symbols in the name
@@ -77,7 +77,7 @@ function registeredCount(cardA, cardB) {
   return 0
 }
 
-cashBackCards.sort(sort(registeredCount, 'name'))
+cashBackCards.sort(sort([registeredCount, 'name']))
 /* [
   {rating: 4.4, name: "Bank of America® Cash Rew...", bank: "Bank of America®"}
   {rating: 3.7, name: "Discover it® Cash Back", bank: "Discover®"}
@@ -86,9 +86,10 @@ cashBackCards.sort(sort(registeredCount, 'name'))
 ] */
 ```
 
-Instead of passing as multiple arguments, it's also possible to pass the arguments as an array
+The array syntax for multiple arguments is optional. It's also fine to pass the sorting conditions as multiple arguments:
+
 ```javascript
-cashBackCards.sort(sort(['>rating', '<name']))
+cashBackCards.sort(sort('>rating', '<name'))
 /* [
   {rating: 4.4, name: "Bank of America® Cash Rew...", bank: "Bank of America®"}
   {rating: 3.7, name: "Capital One® Quicksilver®...", bank: "Capital One®"}
