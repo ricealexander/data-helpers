@@ -1,0 +1,25 @@
+{
+  "name": "data-helpers",
+  "version": "1.0.0",
+  "description": "Useful functions for working with data",
+  "author": {
+    "name": "Alexander Rice",
+    "email": "webdev@ricealexander.com",
+    "url": "https://ricealexander.com"
+  },
+  "repository": "github:ricealexander/helpers",
+  "bugs": "https://github.com/ricealexander/helpers/issues",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "serve": "parcel index.html"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.1",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.2",
+    "parcel": "^1.12.3"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "editor.detectIndentation": false,
+  "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "eslint.autoFixOnSave": true,
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+}

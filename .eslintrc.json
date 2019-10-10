@@ -1,0 +1,19 @@
+{
+  "env": {
+    "es6": true
+  },
+  "extends": "airbnb",
+  "rules": {
+    "comma-dangle": ["error", "always-multiline"],
+    "no-multi-spaces": ["error", {
+      "exceptions": {
+        "Property": true,
+        "VariableDeclarator": true
+      },
+      "ignoreEOLComments": true
+    }],
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "object-curly-newline": "off",
+    "semi": ["error", "never"]
+  }
+}
