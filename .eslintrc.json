@@ -12,6 +12,10 @@
       },
       "ignoreEOLComments": true
     }],
+    "no-param-reassign": ["error", {
+      "props": true,
+      "ignorePropertyModificationsFor": ["acc", "accumulator", "object", "result"]
+    }],
     "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
     "object-curly-newline": "off",
     "semi": ["error", "never"]
