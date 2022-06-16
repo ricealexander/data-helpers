@@ -11,18 +11,11 @@
   "bugs": "https://github.com/ricealexander/helpers/issues",
   "license": "MIT",
   "private": true,
-  "source": "index.js",
-  "main": "dist/data-helpers.js",
-  "scripts": {
-    "build": "parcel build",
-    "watch": "parcel watch"
-  },
   "devDependencies": {
     "eslint": "^7.2.0",
     "eslint-config-webtrinkets": "https://github.com/ricealexander/eslint-config-webtrinkets#1.0.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-sonarjs": "^0.5.0",
-    "eslint-plugin-unicorn": "^20.1.0",
-    "parcel": "^2.6.0"
+    "eslint-plugin-unicorn": "^20.1.0"
   }
 }

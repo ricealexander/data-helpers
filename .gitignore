@@ -4,6 +4,3 @@ Thumbs.db
 
 # NPM files
 /node_modules
-
-# Parcel files
-/.parcel-cache
