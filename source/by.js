@@ -1,4 +1,4 @@
-import accessProperty from './utilities/accessProperty'
+const accessProperty = require('./utilities/accessProperty')
 
 // simpleSort()
 // accepts objects and a key
@@ -59,4 +59,4 @@ const by = (...properties) => (
   }
 )
 
-export default by
+module.exports = by

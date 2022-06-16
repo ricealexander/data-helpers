@@ -30,4 +30,4 @@ const accessProperty = (object, propertyPath) => {
     )
 }
 
-export default accessProperty
+module.exports = accessProperty

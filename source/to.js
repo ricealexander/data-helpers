@@ -1,4 +1,4 @@
-import accessProperty from './utilities/accessProperty'
+const accessProperty = require('./utilities/accessProperty')
 
 function to (...keys) {
   return (object => {
@@ -13,4 +13,4 @@ function to (...keys) {
   })
 }
 
-export default to
+module.exports = to

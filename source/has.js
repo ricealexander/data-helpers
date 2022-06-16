@@ -1,4 +1,4 @@
-import accessProperty from './utilities/accessProperty'
+const accessProperty = require('./utilities/accessProperty')
 
 function isValidValue (value) {
   if (Array.isArray(value)) return (value.length > 0)
@@ -30,4 +30,4 @@ const has = (...properties) => (
   )
 )
 
-export default has
+module.exports = has
