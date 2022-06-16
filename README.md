@@ -77,7 +77,7 @@ function registeredCount(cardA, cardB) {
   return 0
 }
 
-cashBackCards.sort(by([registeredCount, 'name']))
+cashBackCards.sort(by(registeredCount, 'name'))
 /* [
   {rating: 4.4, name: "Bank of America® Cash Rew...", bank: "Bank of America®"}
   {rating: 3.7, name: "Discover it® Cash Back", bank: "Discover®"}
@@ -86,7 +86,7 @@ cashBackCards.sort(by([registeredCount, 'name']))
 ] */
 ```
 
-The array syntax for multiple arguments is optional. It's also fine to pass the sorting conditions as multiple arguments:
+You can use multiple string arguments as well:
 
 ```javascript
 cashBackCards.sort(by('>rating', '<name'))
